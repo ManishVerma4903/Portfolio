@@ -59,13 +59,15 @@ body {
     text-shadow: 0 0 1.5rem var(--main-color);
     color: var(--main-color);
 }
+
 .navbar ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 1.8rem;
 }
-.navbar ul i{
+
+.navbar ul i {
     /* font-size: 18px; */
     display: none;
 }
@@ -123,22 +125,26 @@ body {
 
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 32px;
     line-height: 1.5;
 }
-.home-content h1 span{
+
+.home-content h1 span {
     color: var(--main-color);
     line-height: 1.8;
 }
-.home-content p{
-    font-size:14px;
+
+.home-content p {
+    font-size: 14px;
     line-height: 1.4;
 }
-.social-links{
+
+.social-links {
     margin-top: 30px;
 }
-.social-links a i{
+
+.social-links a i {
     font-size: 20px;
     margin: 10px;
     color: var(--main-color);
@@ -146,8 +152,9 @@ body {
     padding: 10px;
 
     border-radius: 50%;
-    
+
 }
+
 .social-links a i:hover {
     transform: scale(1.1);
     color: white;
@@ -155,24 +162,30 @@ body {
     box-shadow: 2px 2px 25px var(--main-color);
 }
 
-.home-buttons{
+.home-buttons {
     margin-top: 20px;
     font-size: 16px;
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.home-buttons .btn1,.btn2{
+
+.home-buttons .btn1,
+.btn2 {
     border: 2px solid var(--main-color);
     padding: 10px 12px;
     border-radius: 20px;
 }
-.home-buttons .btn1:hover,.btn2:hover{
+
+.home-buttons .btn1:hover,
+.btn2:hover {
     background-color: var(--main-color);
-    
+
 }
-.home-buttons .btn1 a,.btn2 a{
-   color: var(--main-color);
+
+.home-buttons .btn1 a,
+.btn2 a {
+    color: var(--main-color);
 }
 
 .home-image {
@@ -184,10 +197,11 @@ body {
     background-size: cover;
     margin-top: 120px;
 }
+
 .home-image:hover {
-    box-shadow :0 0 20px var(--main-color),
-                0 0 50px var(--main-color),
-                0 0 100px var(--main-color);
+    box-shadow: 0 0 20px var(--main-color),
+        0 0 50px var(--main-color),
+        0 0 100px var(--main-color);
 }
 
 
@@ -195,68 +209,78 @@ body {
 
 /* education */
 
-.heading{
+.heading {
     font-size: 7rem;
     text-align: center;
-    margin: 5rem 0 ;
+    margin: 5rem 0;
 }
-.education{
+
+.education {
     padding: 100px 15px;
     background-color: var(--second-color);
     border-top: 3px solid var(--main-color);
 }
-.education h2{
+
+.education h2 {
     margin-bottom: 5rem;
 }
 
-.timeline-items{
+.timeline-items {
     max-width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     position: relative;
 }
-.timeline-items::before{
+
+.timeline-items::before {
     content: "";
     position: absolute;
     width: 5px;
-    height: 100% ;
+    height: 100%;
     background-color: var(--main-color);
     left: calc(50% - 1px);
 }
+
 .timeline-item {
     margin-bottom: 40px;
     width: 100%;
     position: relative;
 }
+
 .timeline-item:last-child {
     margin-bottom: 0;
 }
+
 .timeline-item:nth-child(odd) {
     padding-right: calc(50% + 30px);
     text-align: right;
 }
+
 .timeline-item:nth-child(even) {
     padding-left: calc(50% + 30px);
 }
-.timeline-dot{
+
+.timeline-dot {
     height: 21px;
     width: 21px;
     background-color: var(--main-color);
     box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
+        0 0 50px var(--main-color);
     position: absolute;
     left: calc(50% - 8px);
     border-radius: 50%;
     top: 10px;
 }
-.timeline-date{
+
+.timeline-date {
     font-size: 20px;
     font-weight: 800;
     color: white;
     margin: 6px 0 15px;
 }
-.timeline-content{
+
+.timeline-content {
     background-color: var(--bg-color);
     border: 3px solid var(--main-color);
     padding: 30px 50px;
@@ -265,274 +289,323 @@ body {
     cursor: pointer;
     transition: 0.3s ease-in-out
 }
-.timeline-content:hover{
+
+.timeline-content:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
+
 .timeline-content h3 {
     font-size: 18px;
     margin-bottom: 10px;
     color: var(--main-color);
 }
+
 .timeline-content p {
     font-size: 14px;
 }
+
 .timeline-content ul {
     font-size: 14px;
     margin-left: 12px;
 }
 
 /* skills */
-.skills{
+.skills {
     border-top: 3px solid var(--main-color);
-    padding: 100px 12% ;
+    padding: 100px 12%;
     /* padding: 100px 15px; */
     background-color: var(--second-color);
 }
 
 
-.skill{
+.skill {
     display: flex;
-    justify-content:space-between;
-    
+    justify-content: space-between;
+
 }
-.leftskill i{
+
+.leftskill i {
     font-size: 24px;
     margin: 10px 0;
 }
-.leftskill .name{
+
+.leftskill .name {
     font-size: 18px;
     margin-bottom: 10px;
 }
- .progress-bar{
+
+.progress-bar {
     width: 500px;
     height: 12px;
     background-color: #262323;
 }
-.pload1{
+
+.pload1 {
     position: relative;
     height: 12px;
     width: 90%;
     background-color: var(--main-color);
     animation: barmove1 1s linear;
 }
-.pload2{
+
+.pload2 {
     position: relative;
     height: 12px;
     width: 80%;
     background-color: var(--main-color);
     animation: barmove2 1s linear;
 }
-.pload3{
+
+.pload3 {
     position: relative;
     height: 12px;
     width: 70%;
     background-color: var(--main-color);
     animation: barmove3 1s linear;
 }
-.pload4{
+
+.pload4 {
     position: relative;
     height: 12px;
     width: 60%;
     background-color: var(--main-color);
     animation: barmove4 1s linear;
 }
-.pload1 h3{
+
+.pload1 h3 {
     color: var(--second-color);
     text-align: right;
     padding-right: 2px;
 
 }
-.pload2 h3{
+
+.pload2 h3 {
     color: var(--second-color);
     text-align: right;
     padding-right: 2px;
 
 }
-.pload3 h3{
+
+.pload3 h3 {
     color: var(--second-color);
     text-align: right;
     padding-right: 2px;
 
 }
-.pload4 h3{
+
+.pload4 h3 {
     color: var(--second-color);
     text-align: right;
     padding-right: 2px;
 
 }
+
 @keyframes barmove1 {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 90%;
     }
 }
+
 @keyframes barmove2 {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 80%;
     }
 }
+
 @keyframes barmove3 {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 70%;
     }
 }
+
 @keyframes barmove4 {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 60%;
     }
 }
 
-.right{
+.right {
     display: flex;
     justify-content: space-around;
     height: 400px;
     width: 400px;
     gap: 50px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin-right: 50px;
 }
 
-.circle{
+.circle {
     position: relative;
     height: 120px;
     width: 120px;
-    border-radius: 50% ;
-    background: rgb(45, 39, 39) linear-gradient(to right,transparent 50%, var(--main-color) 0);
-    
+    border-radius: 50%;
+    background: rgb(45, 39, 39) linear-gradient(to right, transparent 50%, var(--main-color) 0);
+
 
 }
-.circle::before{
+
+.circle::before {
     content: "";
     display: block;
     height: 100%;
     margin-left: 50%;
-    transform-origin:left ;
+    transform-origin: left;
     border-radius: 0 100% 100% 0/50%;
 }
-.circle::after{
+
+.circle::after {
     content: "";
-   position: absolute;
-   inset: 10px;
-   border-radius: 50%;
-   background: var(--second-color);
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    background: var(--second-color);
 }
 
-.circle::before{
+.circle::before {
     background: var(--main-color);
     transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
     animation: circleprogress 1s linear;
 }
+
 @keyframes circleprogress {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
     }
 }
-.circle span{
+
+.circle span {
     font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: var(--main-color);
     font-weight: 700;
     z-index: 5;
-    
+
 }
-.rightskill .name{
+
+.rightskill .name {
     text-align: center;
     font-size: 18px;
     padding: 10px;
 }
+
 /* projects */
-.pro{
+.pro {
     border-top: 3px solid var(--main-color);
     background-color: var(--second-color);
     /* padding-top: 70px; */
 }
-.pro .heading{
+
+.pro .heading {
 
     padding-top: 70px;
 }
-.projects{
+
+.projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 4rem 12% 4rem;
-    gap: 30px;
-}
-.project{
-    width: 360px;
+    /* gap: 30px; */
+
 }
 
-.project img{
+.project {
     width: 360px;
+    margin-top: 30px;
 }
-.project .title{
+
+.project img {
+    width: 360px;
+    border-radius: 20px;
+}
+
+.project .title {
     font-size: 24px;
     margin: 10px;
     color: var(--main-color);
 }
-.project .discription{
+
+.project .discription {
     font-size: 18px;
-    margin:10px;
+    margin: 10px;
 }
- .pro-link h1 a{
+
+.pro-link h1 a {
     color: var(--main-color);
 }
- .pro-link i{
+
+.pro-link i {
     color: white;
 }
-.project img{
+
+.project img {
     transition: 0.2s linear;
 }
-.project img:hover{
+
+.project img:hover {
     transform: scale(1.1);
 }
 
 /* contact */
-.contact{
+.contact {
     border-top: 3px solid var(--main-color);
     padding: 4rem 12% 4rem;
     background-color: var(--second-color);
 }
-.contact .heading{
+
+.contact .heading {
     margin-top: 110px;
 }
-.form{
+
+.form {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
 }
-form{
+
+form {
     display: flex;
 }
-form .left{
+
+form .left {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
-form .right{
+
+form .right {
     margin-top: 25px;
     margin-left: 15px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
-form .right button{
+
+form .right button {
     border: 2px solid var(--main-color);
     margin: auto;
     background-color: transparent;
@@ -542,13 +615,15 @@ form .right button{
     text-align: center;
     font-size: 8px;
     background-color: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color) ;
+    box-shadow: 0 0 25px var(--main-color);
     transition: 0.2s ease;
 }
-form .right button:hover{
+
+form .right button:hover {
     transform: scale(1.1);
 }
-form input{
+
+form input {
     border: 2px solid var(--main-color);
     background-color: transparent;
     padding: 17px 127px 15px 20px;
@@ -559,15 +634,15 @@ form input{
     font-size: 18px;
 }
 
-.message{
-    padding: 11px 250px 154px 10px;
-    
+.message {
+    padding: 11px 240px 154px 10px;
+
 }
 
 
 /* footer */
 
-.footer{
+.footer {
     text-align: center;
     margin: 9px;
     font-size: 18px;
@@ -590,18 +665,21 @@ form input{
         color: var(--text-color);
         font-weight: 500;
         transition: 0.3s ease;
-    
+
     }
 }
+
 @media screen and (max-width:700px) {
-    .header{
+    .header {
         width: 100%;
     }
-    .navbar  ul li{
+
+    .navbar ul li {
         display: none;
-        
+
     }
-    .navbar ul i{
+
+    .navbar ul i {
         font-size: 18px;
         display: block;
     }
@@ -612,42 +690,109 @@ form input{
         height: 100%;
         width: 85rem;
         /* background-color: green; */
-    } 
+    }
+
     .home-content {
         width: auto;
-        margin: 50px auto; 
+        margin: 50px auto;
         text-align: justify;
         /* background-color: red; */
         width: 75%;
-    
+
     }
-    .home-image 
-    {
-    margin: auto;
+
+    .home-image {
+        margin: auto;
     }
 
     /* education  */
-    .education{
+    .education {
         width: 85rem;
     }
-    .timeline-item{
+
+    .timeline-item {
         margin: 50px;
     }
-    
+
     /* skills */
 
-    .skill{
+    .skills {
+        width: 85rem;
+    }
+
+    .skill {
         flex-direction: column;
     }
-    .right{
-        align-items: center;
-        align-items: center;
-        margin: auto ;
+
+    .left {
+        margin: 15px auto;
     }
-    .rightskill{
+
+    .right {
+        align-items: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .rightskill {
         margin-top: 50px;
     }
 
+    /* .project */
+    .pro {
+        width: 85rem;
+    }
 
-    
-}  
+    .project {
+        width: 300px;
+        margin: 10px 5px;
+    }
+
+    .project img {
+        width: 300px;
+    }
+
+
+    /* contact  */
+    .contact {
+        width: 85rem;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form .left input {
+        padding: 17px 12px 15px 20px;
+        margin: 2px;
+    }
+
+    form .left {
+        margin: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    form .right {
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .message {
+        padding: 11px 300px 154px 10px;
+
+    }
+
+    form .right button {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    /* footer */
+
+    .footer {
+        width: 85rem;
+    }
+}
