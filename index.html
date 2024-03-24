@@ -16,6 +16,10 @@
         <a href="#" class="logo">Manish
         <span>Verma</span></a>
         <div class="navbar">
+            <input type="checkbox"  id="check">
+            <label for="check">
+                <i class="fa-solid fa-bars  " id="menu" onclick="menuopen()" ></i>
+            </label>
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#education">EDUCATION</a></li>
@@ -23,15 +27,29 @@
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT ME</a></li>
                 
-                <i class="fa-solid fa-bars"></i>
+                
             </ul>
         </div>
+        <div class="sidebar">
+            <div class="cross" onclick="menuclose()"><i class="fa-solid fa-x"></i></div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT ME</a></li>
+                
+                
+            </ul>
+
+        </div>
     </div>
+    
     <div class="home" id="home">
         <div class="home-content">
-            <h1>Hi,It's <span>Manish</span></h1>
+            <h1>Hi,I am <span>Manish</span></h1>
             <h1>I am</h1>
-            <p>Currently immersed in the enriching environment of ITS Engineering College, is fervently pursuing a Bachelor of Technology (B.Tech) degree. Guided by an unwavering passion for technology, my ambition is to establish himself as a Software Developer. In this academic journey, he delves into the complexities of software engineering principles and hones proficiency in various programming languages. Through dedication to academic pursuits and staying attuned to industry advancements, Harsh Sharma is on a determined path to carve out a significant role in the dynamic realm of software development .</p> 
+            <p>Currently immersed in the enriching environment of ITS Engineering College, is fervently pursuing a Bachelor of Technology (B.Tech) degree. Guided by an unwavering passion for technology, my ambition is to establish myself as a Software Developer. In this academic journey, he delves into the complexities of software engineering principles and hones proficiency in various programming languages. Through dedication to academic pursuits and staying attuned to industry advancements, Harsh Sharma is on a determined path to carve out a significant role in the dynamic realm of software development .</p> 
             <div class="social-links">
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -182,7 +200,10 @@
                     <input type="text"  name="subject" placeholder="subject"></div>
                     <div class="right">
                         <input type="message" name="message" class="message"  placeholder="Message"> 
-                        <button><h1>Send Message</h1></button>
+                        <div class="buttons">
+                            <button><h1>Send Message</h1></button>
+                        <button class="button"><h1>Clear Form</h1></button>
+                        </div>
                     </div>      
             </form>
         </div>
@@ -195,23 +216,8 @@
 </body>
 
 
-  <script src="script.js"></script>
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxAEye52--DibkrDtnrMiEfxRObQwDSp5bBZtEyHxxrdYZvBbihJv5UA-z8cDulHq2v/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg");
   
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Details Submitted"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
-            form.reset();
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
   </script>
+  <script src="script.js"></script>
 </html>
