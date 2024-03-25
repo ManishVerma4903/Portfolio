@@ -47,15 +47,10 @@
     
     <div class="home" id="home">
         <div class="home-content">
-            <h1>Hi,I am <span>Manish</span></h1>
-            <h1>I am</h1>
-            <p>Currently, I am an engineering student at ITS engineering college, Great Noida, and recently pursuing Bachelor of Technology(B.tech) degree from  computer science stream. My goal is to establish myself as a software developer.
-                
-                And to expand my knowledge and skills through ITS college. 
-                
-                As technology is the top priority in the world and for today's generation,  I am trying to deliver into the complexities of software engineering principals and honest proficiency in various programming languages.
-                
-                 Through my dedication to academic pursuits and staying attuned to industry advancement,and I think I'm on the determines the Path to carve out a significant role in the dynamic realm of software development.
+            <h1>Hi, </h1>
+            <h1>I am <span class="auto-type"></span>
+            </h1>
+            <p>Currently, I am an engineering student at ITS Engineering College, Greater Noida, and I am pursuing a Bachelor of Technology (B.Tech) degree in computer science. My goal is to establish myself as a software developer and expand my knowledge and skills through ITS College. Technology is a top priority in today's world and for the current generation. I am trying to delve into the complexities of software engineering principles and acquire proficiency in various programming languages. Through my dedication to academic pursuits and staying attuned to industry advancements, I believe I am on the path to carve out a significant role in the dynamic realm of software development.
                 </p> 
             <div class="social-links">
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
@@ -222,9 +217,15 @@
     </div>
 </body>
 
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
   <script>
-  
+    var typed = new Typed(".auto-type",{
+        strings : ["Manish Verma","a Programmer"," a Web Develpoer"],
+        typeSpeed : 150,
+        bacSpeed : 150,
+        loop : true
+    })
   </script>
-  <script src="script.js"></script>
 </html>
