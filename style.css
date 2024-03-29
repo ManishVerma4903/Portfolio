@@ -404,7 +404,7 @@ body {
 .pload3 {
     position: relative;
     height: 12px;
-    width: 70%;
+    width: 60%;
     background-color: var(--main-color);
     animation: barmove3 1s linear;
 }
@@ -412,7 +412,7 @@ body {
 .pload4 {
     position: relative;
     height: 12px;
-    width: 60%;
+    width: 50%;
     background-color: var(--main-color);
     animation: barmove4 1s linear;
 }
@@ -471,7 +471,7 @@ body {
     }
 
     100% {
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -481,7 +481,7 @@ body {
     }
 
     100% {
-        width: 60%;
+        width: 50%;
     }
 }
 
